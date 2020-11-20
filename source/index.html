@@ -17,8 +17,8 @@
             </span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__list site-list">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
                 <a href="#">
                   главная
                 </a>
@@ -50,9 +50,10 @@
           <h2 class="visually-hidden">
             Приветственный баннер города Седона
           </h2>
-          <div class="intro__welcome-banner">
-            <img class="welcome-banner__logo" src="./img/welcome.svg" alt="пейзаж каньона Седоны" width="282" height="214">
+          <div class="page-main__intro__welcome-banner">
+            <img src="./img/welcome.svg" alt="пейзаж каньона Седоны" width="282" height="214">
             <!--Если учитывать, что у мокапа на баннере будет три версии и, соответственно три размера - то легче реализовать через множественный фон-->
+            <!--Удалил класс у img, буду задавать фон блоку через css-->
           </div>
           <div class="intro__declare">
             <h3>
@@ -67,13 +68,13 @@
           <h2 class="visually-hidden">
             преимущества
           </h2>
-          <div class="advantages__picture-block">
+          <div class="page-main__advantages__picture-block picture-block">
             <div class="picture-block__text-card">
-              <h3 class="text-card__header">
+              <h3 class="picture-block__text-card__header">
                 Настоящий городок
               </h3>
-              <p class="text-card__number">— №1 —</p>
-              <p class="text-card__description">
+              <p class="picture-block__text-card__number">— №1 —</p>
+              <p class="picture-block__text-card__description">
                 Седона - не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
@@ -81,83 +82,83 @@
               <img src="#" alt="город Седона" width="800" height="256">
             </div>
           </div>
-          <div class="advantages__pictogram-block">
+          <div class="page-main__advantages__pictogram-block pictogram-block">
             <ul class="pictogram-block__list">
               <li class="pictogram-block__item">
                 <img src="./img/icon-house.svg" alt="Рекомендуем пожить в настоящем мотеле, всё как в кино!" width="75" height="72">
                 <h3 class="item__header">
                   Жильё
                 </h3>
-                <p class="item__text">
+                <p class="pictogram-block__item__text">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
               <li class="pictogram-block__item">
                 <img src="./img/icon-burger.svg" alt="Всегда заказывайте фирменный бургер, вы не разочаруетесь!" width="75" height="70">
-                <h3 class="item__header">
+                <h3 class="pictogram-block__item__header">
                   Еда
                 </h3>
-                <p class="item__text">
+                <p class="pictogram-block__item__text">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
               <li class="pictogram-block__item">
                 <img src="./img/icon-gift.svg" alt="Сувениры Не только китайского, но и местного производства!" width="64" height="77">
-                <h3 class="item__header">
+                <h3 class="pictogram-block__item__header">
                   Сувениры
                 </h3>
-                <p class="item__text">
+                <p class="pictogram-block__item__text">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
             </ul>
           </div>
-          <div class="advantages__picture-block">
+          <div class="advantages__picture-block picture-block">
             <div class="picture-block__image-card">
               <img src="#" alt="город Седона" width="800" height="256">
             </div>
             <div class="picture-block__text-card">
-              <h3 class="text-card__header">
+              <h3 class="picture-block__text-card__header">
                 Там есть мост дьявола
               </h3>
-              <p class="text-card__number">— №2 —</p>
-              <p class="text-card__description">
+              <p class="picture-block__text-card__number">— №2 —</p>
+              <p class="picture-block__text-card__description">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
           </div>
-          <div class="advantages__text-block">
+          <div class="advantages__text-block text-block">
             <ul class="text-block__list">
               <li class="text-block__item">
-                <h3 class="text-block__header">
+                <h3 class="text-block__item__header">
                   небольшая площадь
                 </h3>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   — №3 —
                 </p>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   все интересные места находятся очень близко
                 </p>
               </li>
               <li class="text-block__item">
-                <h3 class="text-block__header">
+                <h3 class="text-block__item__header">
                   красивая дорога
                 </h3>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   — №4 —
                 </p>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </li>
               <li class="text-block__item">
-                <h3 class="text-block__header">
+                <h3 class="text-block__item__header">
                   мало туристов
                 </h3>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   — №5 —
                 </p>
-                <p class="text-block__text">
+                <p class="text-block__item__text">
                   Большинство едет в гранд каньон и толпится там
                 </p>
               </li>
