@@ -17,23 +17,23 @@
             </span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
                 <a href="#">
                   главная
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="#">
                   фото и видео
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="#">
                   форма отзыва
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="#">
                   html academy
                 </a>
@@ -46,16 +46,16 @@
         <h1 class="visually-hidden">
           Туристическая страница города Седона, штат Аризона
         </h1>
-        <section class="page-main__intro">
+        <section class="intro">
           <h2 class="visually-hidden">
             Приветственный баннер города Седона
           </h2>
-          <div class="page-main__intro__welcome-banner">
+          <div class="intro__welcome-banner">
             <img src="./img/welcome.svg" alt="пейзаж каньона Седоны" width="282" height="214">
             <!--Если учитывать, что у мокапа на баннере будет три версии и, соответственно три размера - то легче реализовать через множественный фон-->
             <!--Удалил класс у img, буду задавать фон блоку через css-->
           </div>
-          <div class="intro__declare">
+          <div class="intro__declare offer">
             <h3>
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h3>
@@ -64,111 +64,113 @@
             </p>
           </div>
         </section>
-        <section class="page-main__advantages">
+        <section>
           <h2 class="visually-hidden">
             преимущества
           </h2>
-          <div class="page-main__advantages__picture-block picture-block">
-            <div class="picture-block__text-card">
-              <h3 class="picture-block__text-card__header">
+          <div class="advantages">
+            <div class="advantages__text-card">
+              <h3>
                 Настоящий городок
               </h3>
-              <p class="picture-block__text-card__number">— №1 —</p>
-              <p class="picture-block__text-card__description">
+              <p class="advantages__number">
+                — №1 —
+              </p>
+              <p>
                 Седона - не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <div class="picture-block__image-card">
-              <img src="#" alt="город Седона" width="800" height="256">
-            </div>
+            <img class="advantages__image" src="#" alt="город Седона" width="800" height="256">
           </div>
-          <div class="page-main__advantages__pictogram-block pictogram-block">
+          <div class="pictogram-block">
             <ul class="pictogram-block__list">
               <li class="pictogram-block__item">
                 <img src="./img/icon-house.svg" alt="Рекомендуем пожить в настоящем мотеле, всё как в кино!" width="75" height="72">
-                <h3 class="item__header">
+                <h3>
                   Жильё
                 </h3>
-                <p class="pictogram-block__item__text">
+                <p>
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
               <li class="pictogram-block__item">
                 <img src="./img/icon-burger.svg" alt="Всегда заказывайте фирменный бургер, вы не разочаруетесь!" width="75" height="70">
-                <h3 class="pictogram-block__item__header">
+                <h3>
                   Еда
                 </h3>
-                <p class="pictogram-block__item__text">
+                <p>
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
               <li class="pictogram-block__item">
                 <img src="./img/icon-gift.svg" alt="Сувениры Не только китайского, но и местного производства!" width="64" height="77">
-                <h3 class="pictogram-block__item__header">
+                <h3>
                   Сувениры
                 </h3>
-                <p class="pictogram-block__item__text">
+                <p>
                   Не только китайского, но и местного производства!
                 </p>
               </li>
             </ul>
           </div>
-          <div class="advantages__picture-block picture-block">
-            <div class="picture-block__image-card">
-              <img src="#" alt="город Седона" width="800" height="256">
-            </div>
-            <div class="picture-block__text-card">
-              <h3 class="picture-block__text-card__header">
+          <div class="advantages">
+            <img class="advantages__image" src="#" alt="город Седона" width="800" height="256">
+            <div class="advantages__text-card">
+              <h3>
                 Там есть мост дьявола
               </h3>
-              <p class="picture-block__text-card__number">— №2 —</p>
-              <p class="picture-block__text-card__description">
+              <p class="advantages__number">
+                — №2 —
+              </p>
+              <p>
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
           </div>
-          <div class="advantages__text-block text-block">
-            <ul class="text-block__list">
-              <li class="text-block__item">
-                <h3 class="text-block__item__header">
-                  небольшая площадь
-                </h3>
-                <p class="text-block__item__text">
-                  — №3 —
-                </p>
-                <p class="text-block__item__text">
-                  все интересные места находятся очень близко
-                </p>
-              </li>
-              <li class="text-block__item">
-                <h3 class="text-block__item__header">
-                  красивая дорога
-                </h3>
-                <p class="text-block__item__text">
-                  — №4 —
-                </p>
-                <p class="text-block__item__text">
-                  ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </li>
-              <li class="text-block__item">
-                <h3 class="text-block__item__header">
-                  мало туристов
-                </h3>
-                <p class="text-block__item__text">
-                  — №5 —
-                </p>
-                <p class="text-block__item__text">
-                  Большинство едет в гранд каньон и толпится там
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ul class="advantages text-block">
+            <li class="advantages__text-card advantages__text-card--additional">
+              <h3>
+                небольшая площадь
+              </h3>
+              <p class="advantages__number">
+                — №3 —
+              </p>
+              <p>
+                все интересные места находятся очень близко
+              </p>
+            </li>
+            <li class="advantages__text-card advantages__text-card--additional">
+              <h3>
+                красивая дорога
+              </h3>
+              <p class="advantages__number">
+                — №4 —
+              </p>
+              <p>
+                ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+            <li class="advantages__text-card advantages__text-card--additional">
+              <h3>
+                мало туристов
+              </h3>
+              <p class="advantages__number">
+                — №5 —
+              </p>
+              <p>
+                Большинство едет в гранд каньон и толпится там
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="page-main__map-search">
-          <div class="map-search__title">
-            <h2 class="title__header">Заинтересовались?</h2>
-            <p class="title__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <section class="map-search">
+          <div class="map-search__title offer">
+            <h3>
+              Заинтересовались?
+            </h3>
+            <p>
+              Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
           </div>
           <div class=map-search__map>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d838905.0602905285!2d-111.99749007907951!3d34.781457733529855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1583529763711!5m2!1sru!2sru"
@@ -184,11 +186,13 @@
           </form>
         </section>
       </main>
-      <footer class="page__footer">
-        <div class="footer__contacts">
-            <p class="contacts__text">#visitsedona</p>
+      <footer class="page-footer">
+        <div class="page-footer__contacts">
+            <p>
+              #visitsedona
+            </p>
         </div>
-        <div class="footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="https://twitter.com" aria-label="Блог в Twitter"><img src="./img/twitter.svg" alt="Twitter" width="17" height="17"></a>
@@ -201,7 +205,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__copyright">
+        <div class="page-footer__copyright copyright">
           <span class="copyright__text">website by</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
             <svg class="copyright__logo" width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
