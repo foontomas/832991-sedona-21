@@ -66,37 +66,71 @@
         </section>
         <section>
           <form method="POST" enctype="multipart/form-data">
-            <fieldset>
+            <fieldset class="introdution">
               <legend>
                 представтесь:
               </legend>
+              <label for="name">
+                имя*:
+                <input type="text" name="firstname" id="name" placeholder="петр" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
+              </label>
+              <label for="surname">
+                фамилия*:
+                <input type="text" name="lastname" id="surname" placeholder="иванов" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
 
+              </label>
+              <label for="middlename">
+                отчество:
+                <input type="text" name="secondname" id="middlename" placeholder="александрович" size="50" pattern="^[А-Яа-яЁё\s]+$">
+
+              </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="contact-info">
               <legend>
                 контактная информация:
               </legend>
-
-
-
+              <label for="phone-number">
+                контактный телефон*:
+                <input class=contact-info__phone type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
+              </label>
+              <label for="e-mail">
+                электронная почта*:
+                <input class=contact-info__mail type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
+              </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="impression">
               <legend>
                 ваше общее впечатление:
               </legend>
+              <label for="bridge">
+                Мост Дьявола
+                <input type="checkbox" name="devils-bridge" id="bridge" checked>
+              </label>
+              <label for="mount">
+                Гора-Колокол
+                <input type="checkbox" name="bell-mount" id="mount" checked>
+              </label>
+              <label for="park">
+                Слайд-парк
+                <input type="checkbox" name="slide-park" id="park" checked>
+              </label>
+              <label for="rocks">
+                Красные скалы
+                <input type="checkbox" name="red-rocks" id="rocks">
+              </label>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="sights">
               <legend>
                 посещённые достопримечательности:
               </legend>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="emotions">
               <legend>
                 опишите свои эмоции:
               </legend>
-
+              <input type="text" aria-label="Поле для впечатлений о поездке" name="emotions" id="name" placeholder="Опишите подробно все свои восторги" size="250" pattern="^[А-Яа-яЁё\s]+$">
             </fieldset>
             <button type="submit">
               отправить отзыв
