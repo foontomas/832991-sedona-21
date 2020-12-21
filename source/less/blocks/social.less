@@ -1,31 +1,26 @@
-.social {
-  &__list {
-    display: flex;
-    //width: 150px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 13px;
-    margin-bottom: 12px;
-    margin-right: 17px;
-  }
+.social__list {
+  display: flex;
+  //width: 150px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 13px;
+  margin-bottom: 12px;
+  margin-right: 17px;
+}
 
-  a {
-    width: 46px;
-    height: 48px;
-    background-color: @blue-back;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-right: 6px;
-    :nth-child(3) { //конструкция почему-то не работает
-      margin-right: 0px;
-    }
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: @blue-back;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
 
-  }
-  &__item.number-3 a {
-    margin-right: 0px;
-  }
+.social__link--last {
+  margin-right: 0px;
 }
