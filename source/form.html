@@ -67,69 +67,79 @@
           </div>
         </section>
         <section>
-          <form method="POST" enctype="multipart/form-data">
-            <fieldset class="introdution">
-              <legend>
+          <form class="form" method="POST" enctype="multipart/form-data">
+            <fieldset class="form__fieldset form__fieldset--introdution">
+              <legend class="form__legend">
                 представтесь:
               </legend>
-              <label for="name">
+              <label class="form__label" for="name">
                 имя*:
-                <input type="text" name="firstname" id="name" placeholder="петр" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
+                <input class="form__text-input" type="text" name="firstname" id="name" placeholder="Петр" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
               </label>
-              <label for="surname">
+              <label class="form__label" for="surname">
                 фамилия*:
-                <input type="text" name="lastname" id="surname" placeholder="иванов" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
+                <input class="form__text-input" type="text" name="lastname" id="surname" placeholder="Иванов" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
 
               </label>
-              <label for="middlename">
+              <label class="form__label" for="middlename">
                 отчество:
-                <input type="text" name="secondname" id="middlename" placeholder="александрович" size="50" pattern="^[А-Яа-яЁё\s]+$">
+                <input class="form__text-input" type="text" name="secondname" id="middlename" placeholder="Александрович" size="50" pattern="^[А-Яа-яЁё\s]+$">
 
               </label>
             </fieldset>
-            <fieldset class="contact-info">
-              <legend>
+            <fieldset class="form__fieldset form__fieldset--contact-info">
+              <legend class="form__legend">
                 контактная информация:
               </legend>
-              <label for="phone-number">
+              <label class="form__label" for="phone-number">
                 контактный телефон*:
-                <input class=contact-info__phone type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
+                <input class="form__text-input" class=contact-info__phone type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
               </label>
-              <label for="e-mail">
+              <label class="form__label" for="e-mail">
                 электронная почта*:
-                <input class=contact-info__mail type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
+                <input class="form__text-input" class=contact-info__mail type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
               </label>
             </fieldset>
-            <fieldset class="impression">
-              <legend>
+            <fieldset class="form__fieldset form__fieldset--impression">
+              <legend class="form__legend">
                 ваше общее впечатление:
               </legend>
-              <label for="bridge">
+              <label for="rather_positive">
+                Скорее положительное
+                <input  type="radio" id="rather_positive" value="positive" name="impression_choice" checked>
+              </label>
+              <label for="rather_negative">
+                Скорее отрицательное
+                <input  type="radio" id="rather_negative" value="rather_positive" name="impression_choice">
+              </label>
+              <label for="hard_to_answer">
+                Затрудняюсь ответить
+                <input  type="radio" id="hard_to_answer" value="hard_to_answer" name="impression_choice">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--sights">
+              <legend class="form__legend">
+                посещённые достопримечательности:
+              </legend>
+              <label class="form__label" for="bridge">
                 Мост Дьявола
                 <input type="checkbox" name="devils-bridge" id="bridge" checked>
               </label>
-              <label for="mount">
+              <label class="form__label" for="mount">
                 Гора-Колокол
                 <input type="checkbox" name="bell-mount" id="mount" checked>
               </label>
-              <label for="park">
+              <label class="form__label" for="park">
                 Слайд-парк
                 <input type="checkbox" name="slide-park" id="park" checked>
               </label>
-              <label for="rocks">
+              <label class="form__label" for="rocks">
                 Красные скалы
                 <input type="checkbox" name="red-rocks" id="rocks">
               </label>
-
             </fieldset>
-            <fieldset class="sights">
-              <legend>
-                посещённые достопримечательности:
-              </legend>
-
-            </fieldset>
-            <fieldset class="emotions">
-              <legend>
+            <fieldset class="form__fieldset emotions">
+              <legend class="form__legend">
                 опишите свои эмоции:
               </legend>
               <input type="text" aria-label="Поле для впечатлений о поездке" name="emotions" id="name" placeholder="Опишите подробно все свои восторги" size="250" pattern="^[А-Яа-яЁё\s]+$">
@@ -137,7 +147,6 @@
             <button type="submit">
               отправить отзыв
             </button>
-
           </form>
 
         </section>
