@@ -25,7 +25,7 @@
 }
 
 .form__fieldset--contact-info {
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -35,7 +35,7 @@
 }
 
 .form__fieldset--impression {
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 31px;
   margin-bottom: 15px;
 }
@@ -57,7 +57,7 @@
   margin-bottom: 20px;
 
   &:nth-child(4) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -85,7 +85,7 @@
 }
 
 .form__fieldset--sights {
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
@@ -105,8 +105,9 @@
 
 .form__fieldset--impression .form__label {
   margin-bottom: 21px;
+
   &:nth-child(4) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -114,13 +115,13 @@
   margin-bottom: 34px;
 
   &:nth-child(5) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 .form__fieldset--emotions {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 51px;
 }
 
@@ -179,7 +180,7 @@
   display: none;
 }
 
-.form__fieldset--impression input[type="radio"]~.form__span {
+.form__fieldset--impression input[type="radio"] ~ .form__span {
   display: inline-block;
   vertical-align: bottom;
   background-repeat: no-repeat;
@@ -190,12 +191,12 @@
   margin-right: 26px;
 }
 
-.form__fieldset--impression input[type="radio"]:checked~.form__span {
-  background-image: url(../img/dot.svg);
+.form__fieldset--impression input[type="radio"]:checked ~ .form__span {
+  background-image: url("../img/dot.svg");
   background-position: center;
 }
 
-.form__fieldset--sights input[type="checkbox"]~.form__span {
+.form__fieldset--sights input[type="checkbox"] ~ .form__span {
   display: inline-block;
   vertical-align: bottom;
   background-repeat: no-repeat;
@@ -205,7 +206,7 @@
   margin-right: 29px;
 }
 
-.form__fieldset--sights input[type="checkbox"]:checked~.form__span {
-  background-image: url(../img/tick.svg);
+.form__fieldset--sights input[type="checkbox"]:checked ~ .form__span {
+  background-image: url("../img/tick.svg");
   background-position: center;
 }
