@@ -1,10 +1,12 @@
 .form {
   padding-top: 20px;
   padding-bottom: 48px;
+  border-top: 1px solid @fieldset-border;
 }
 
 .form__fieldset {
   border: none;
+  border-bottom: 1px solid @fieldset-border;
 }
 
 .form__legend {
@@ -37,7 +39,8 @@
   padding-bottom: 31px;
   margin-bottom: 15px;
 }
-.form__fieldset--impression .form__legend {
+
+.form__fieldset--choice .form__legend {
   margin-bottom: 25px;
 }
 
@@ -52,6 +55,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+
   &:nth-child(4) {
     margin-bottom: 0px;
   }
@@ -74,7 +78,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 100%;
   padding-left: 18px;
   margin-left: 10px;
@@ -85,12 +89,12 @@
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
-.form__fieldset--sights .form__legend {
-  margin-bottom: 25px;
-}
 
-.form__fieldset--impression .form__label,
-.form__fieldset--sights .form__label {
+/*.form__fieldset--sights .form__legend {
+  margin-bottom: 25px;
+}*/
+
+.form__fieldset--choice .form__label {
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
@@ -106,9 +110,9 @@
   }
 }
 
-
 .form__fieldset--sights .form__label {
   margin-bottom: 34px;
+
   &:nth-child(5) {
     margin-bottom: 0px;
   }
@@ -134,7 +138,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: none;
   resize: none;
   padding: 13px 23px 29px 21px;
@@ -150,16 +154,17 @@
   color: @white;
   width: 280px;
   height: 58px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: none;
 }
 
-.form__fieldset {
+/*.form__fieldset {
   border-bottom: 1px solid @fieldset-border;
-}
-.form {
+}*/
+
+/*.form {
   border-top: 1px solid @fieldset-border;
-}
+}*/
 
 .form__fieldset:nth-child(1) {
   border-bottom: 1px solid @fieldset-border;
@@ -204,5 +209,3 @@
   background-image: url(../img/tick.svg);
   background-position: center;
 }
-
-
