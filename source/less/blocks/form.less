@@ -1,10 +1,12 @@
 .form {
   padding-top: 20px;
   padding-bottom: 48px;
+  border-top: 1px solid @fieldset-border;
 }
 
 .form__fieldset {
   border: none;
+  border-bottom: 1px solid @fieldset-border;
 }
 
 .form__legend {
@@ -83,10 +85,11 @@
 }
 
 .form__fieldset--sights {
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
+
 .form__fieldset--sights .form__legend {
   margin-bottom: 25px;
 }
@@ -103,22 +106,24 @@
 
 .form__fieldset--impression .form__label {
   margin-bottom: 21px;
+
   &:nth-child(4) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 
 .form__fieldset--sights .form__label {
   margin-bottom: 34px;
+
   &:nth-child(5) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 .form__fieldset--emotions {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 51px;
 }
 
@@ -136,7 +141,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: none;
   resize: none;
   padding: 13px 23px 29px 21px;
@@ -152,15 +157,8 @@
   color: @white;
   width: 280px;
   height: 58px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: none;
-}
-
-.form__fieldset {
-  border-bottom: 1px solid @fieldset-border;
-}
-.form {
-  border-top: 1px solid @fieldset-border;
 }
 
 .form__fieldset:nth-child(1) {
@@ -176,7 +174,7 @@
   display: none;
 }
 
-.form__fieldset--impression input[type="radio"]~.form__span {
+.form__fieldset--impression input[type="radio"] ~ .form__span {
   display: inline-block;
   vertical-align: bottom;
   background-repeat: no-repeat;
@@ -187,12 +185,12 @@
   margin-right: 26px;
 }
 
-.form__fieldset--impression input[type="radio"]:checked~.form__span {
-  background-image: url(../img/dot.svg);
+.form__fieldset--impression input[type="radio"]:checked ~ .form__span {
+  background-image: url("../img/dot.svg");
   background-position: center;
 }
 
-.form__fieldset--sights input[type="checkbox"]~.form__span {
+.form__fieldset--sights input[type="checkbox"] ~ .form__span {
   display: inline-block;
   vertical-align: bottom;
   background-repeat: no-repeat;
@@ -202,9 +200,7 @@
   margin-right: 29px;
 }
 
-.form__fieldset--sights input[type="checkbox"]:checked~.form__span {
-  background-image: url(../img/tick.svg);
+.form__fieldset--sights input[type="checkbox"]:checked ~ .form__span {
+  background-image: url("../img/tick.svg");
   background-position: center;
 }
-
-
