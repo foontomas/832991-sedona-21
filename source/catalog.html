@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -51,16 +52,16 @@
           <h2 class="visually-hidden">
             Приветственный баннер города Седона
           </h2>
-          <div class="intro__welcome-banner">
-            <img src="./img/welcome.svg" alt="пейзаж каньона Седоны" width="282" height="214">
+          <div class="intro__welcome-banner intro__welcome-banner--simple">
+            <!--<img src="./img/welcome.svg" alt="пейзаж каньона Седоны" width="282" height="214">-->
             <!--Если учитывать, что у мокапа на баннере будет три версии и, соответственно три размера - то легче реализовать через множественный фон-->
             <!--Удалил класс у img, буду задавать фон блоку через css-->
           </div>
           <div class="intro__declare offer">
-            <h3>
+            <h3 class="intro__h3">
               фото и видео
             </h3>
-            <p>
+            <p class="intro__p">
               не можете решиться на путешествие из-за курса? фотографии помогут забыть вам о политике и экономике.
             </p>
           </div>
@@ -71,50 +72,62 @@
           </h2>
           <ul class="photo-stream__list">
             <li class="photo-stream__item">
-              <img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">
-              <h3>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <div class="photo-stream__image-container photo-stream__image-container--mobile photo-stream__image-container--photo-1">
+
+              </div>
+              <h3 class="photo-stream__h3 photo-stream__item--text">
                 неродные просторы
               </h3>
-              <p class="photo-stream__author-name">
+              <p class="photo-stream__author-name photo-stream__item--text">
                 Автор фото: Борис
               </p>
-              <p class="photo-stream__likes-counter">
+              <p class="photo-stream__likes-counter photo-stream__item--text">
                 1350
               </p>
             </li>
             <li class="photo-stream__item">
-              <img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">
-              <h3>
+              <div class="photo-stream__image-container photo-stream__image-container--mobile photo-stream__image-container--photo-2">
+
+              </div>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <h3 class="photo-stream__h3 photo-stream__item--text">
                 местная растительность
               </h3>
-              <p class="photo-stream__author-name">
+              <p class="photo-stream__author-name photo-stream__item--text">
                 Автор фото: Сергей
               </p>
-              <p class="photo-stream__likes-counter">
+              <p class="photo-stream__likes-counter photo-stream__item--text">
                 143
               </p>
             </li>
             <li class="photo-stream__item">
-              <img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">
-              <h3>
+              <div class="photo-stream__image-container photo-stream__image-container--mobile photo-stream__image-container--photo-3">
+
+              </div>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <h3 class="photo-stream__h3 photo-stream__item--text">
                 дорога на север
               </h3>
-              <p class="photo-stream__author-name">
+              <p class="photo-stream__author-name photo-stream__item--text">
                 Автор фото: Петр
               </p>
-              <p class="photo-stream__likes-counter">
+              <p class="photo-stream__likes-counter photo-stream__item--text">
                 96
               </p>
             </li>
             <li class="photo-stream__item">
-              <img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">
-              <h3>
+              <div class="photo-stream__image-container photo-stream__image-container--mobile photo-stream__image-container--photo-4">
+
+              </div>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <h3 class="photo-stream__h3 photo-stream__item--text">
                 мост дъявола
               </h3>
-              <p class="photo-stream__author-name">
+              <p class="photo-stream__author-name photo-stream__item--text">
                 Автор фото: Антон
               </p>
-              <p class="photo-stream__likes-counter">
+              <p class="photo-stream__likes-counter photo-stream__item--text">
                 254
               </p>
             </li>
@@ -123,14 +136,14 @@
         </section>
         <section class="video-section">
           <div class="video-section__title offer">
-            <h3>
+            <h3 class="video-section__h3">
               все ещё сомневаетесь?
             </h3>
-            <p>
+            <p class="video-section__p">
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
           </div>
-          <video class="video-section__content" controls width="320px" height="201px" autoplay loop muted poster="poster.png">
+          <video class="video-section__content" controls autoplay loop muted poster="./img/video.jpg">
             <source src="#" type="video/mp4">
             <source src="#" type="video/webm">
             <p>Ваш браузер не поддерживает HTML5 видео. Для просмотра используйте
