@@ -3,11 +3,16 @@
   color: @white;
   font-size: 14px;
   line-height: 21px;
+  min-width: 320px;
   /*h3{
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
   }*/
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+  }
+
   &--additional {
     background-color: @grey-back;
     color: @ordinary-text;
