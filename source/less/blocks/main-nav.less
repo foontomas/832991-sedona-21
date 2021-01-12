@@ -2,6 +2,12 @@
   list-style: none;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
+  background-color: @blue-back;
+  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2), inset 0 1px rgba(255, 255, 255, 0.2);
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .main-nav__link {
@@ -9,20 +15,83 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-}
-
-.main-nav__list--mobile {
-  box-shadow: inset 0 -5px 5px rgba(1, 1, 1, 0.2);
-  padding: 0;
-}
-
-.main-nav__item--mobile {
-  background-color: @blue-back;
-  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2), inset 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.main-nav__item--mobile .main-nav__link {
   font-size: 18px;
   line-height: 40px;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+    color: @simple-black;
+  }
 }
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+  box-shadow: inset 0 -5px 5px rgba(1, 1, 1, 0.2);
+  padding: 0;
+  /*flex-direction: column;
+  justify-content: space-around;*/
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-nav__item:nth-child(1),
+  .main-nav__item:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  .main-nav__item:nth-child(3),
+  .main-nav__item:nth-child(4) {
+    justify-content: flex-end;
+  }
+
+}
+
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-bar {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+/*.main-nav__list--mobile {
+  box-shadow: inset 0 -5px 5px rgba(1, 1, 1, 0.2);
+  padding: 0;
+}*/
+
+/*.main-nav__item--mobile {
+  background-color: @blue-back;
+  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2), inset 0 1px rgba(255, 255, 255, 0.2);
+}*/
+
+/*.main-nav__item--mobile .main-nav__link {
+  font-size: 18px;
+  line-height: 40px;
+  color: @white;
+}*/
