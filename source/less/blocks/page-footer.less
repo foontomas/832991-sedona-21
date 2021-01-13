@@ -7,3 +7,20 @@
 .page-footer__copyright {
   margin-top: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 60px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .page-footer__hashtag,
+  .page-footer__copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

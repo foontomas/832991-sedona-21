@@ -7,8 +7,15 @@
   height: 84px;
   padding: 0;
   transform: translateX(-50%);
+  background-image: url("../img/logotype.svg");
 
   @media (min-width: @tablet-width) {
     top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/logotype-desktop.svg");
+    width: 187px;
+    height: 97px;
   }
 }

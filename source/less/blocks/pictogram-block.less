@@ -5,3 +5,24 @@
 .pictogram-block__list {
   list-style: none;
 }
+
+@media (min-width: @tablet-width) {
+  .pictogram-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .pictogram-block__item {
+    display: inline-block;
+    width: 256px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+
+  .pictogram-block__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
