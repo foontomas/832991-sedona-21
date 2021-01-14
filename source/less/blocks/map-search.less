@@ -16,3 +16,30 @@
   box-sizing: border-box;
   min-width: 280px;
 }
+
+.map-search__map {
+  width: 100%;
+  min-width: 320px;
+  height: 350px;
+}
+
+@media (min-width: @tablet-width) {
+  .map-search__title {
+    width: 435px;
+    margin: auto;
+  }
+
+  .map-search__map {
+    min-width: 768px;
+    order: 3;
+  }
+
+  .map-search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-search__h3 {
+    font-size: 30px;
+  }
+}

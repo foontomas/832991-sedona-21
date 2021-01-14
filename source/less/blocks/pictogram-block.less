@@ -5,3 +5,36 @@
 .pictogram-block__list {
   list-style: none;
 }
+
+@media (min-width: @tablet-width) {
+  .pictogram-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pictogram-block__item {
+    display: inline-block;
+    /*width: 256px;*/
+    width: 33.333%;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+
+  .pictogram-block__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*.pictogram-block {
+    justify-content: space-between;
+  }*/
+
+  .pictogram-block__item {
+    width: 400px;
+  }
+}
