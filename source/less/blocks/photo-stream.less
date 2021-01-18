@@ -1,4 +1,4 @@
-.photo-stream__image-container {
+/*.photo-stream__image-container {
   width: 100%;
 
   background-color: @welcome-back;
@@ -7,33 +7,34 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
 
-  &--mobile {
+  /*&--mobile {
     height: 280px;
     background-size: 280px 280px, cover;
-  }
+  }*/
 
-  &--photo-1 {
+  /*&--photo-1 {
     background-image: url("../img/photo-1-mobile.jpg");
-  }
+  }*/
 
-  &--photo-2 {
+  /*&--photo-2 {
     background-image: url("../img/photo-2-mobile.jpg");
-  }
+  }*/
 
-  &--photo-3 {
+  /*&--photo-3 {
     background-image: url("../img/photo-3-mobile.jpg");
-  }
+  }*/
 
-  &--photo-4 {
+  /*&--photo-4 {
     background-image: url("../img/photo-4-mobile.jpg");
   }
-}
+}*/
 
 .photo-stream__item {
   border-bottom: 1px solid @fieldset-border;
   padding-top: 22px;
   padding-bottom: 21px;
   margin-bottom: 11px;
+  position: relative; /*!!*/
 
   &:first-child {
     border-top: 1px solid @fieldset-border;
@@ -75,17 +76,60 @@
   }
 
   .photo-stream__item {
-    width: 280px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .photo-stream__image-container--photo-1 {
+/*@media (min-width: @tablet-width) {
+  /*.photo-stream__image-container--photo-1 {
     background-image: url(../img/photo-1-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }*/
+/*}*/
+
+@media (min-width: @tablet-width) {
+  .photo-stream__list {
+    display: grid;
+    grid-template-rows: 480px 347px 347px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-areas: "highway highway" "plants northroad" "bridge";
+  }
+
+  .photo-stream__item--1 {
+      grid-area: highway;
+    }
+
+  .photo-stream__item--2 {
+    grid-area: plants;
+  }
+
+  .photo-stream__item--3 {
+    grid-area: northroad;
+  }
+
+  .photo-stream__item--4 {
+    grid-area: bridge;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-stream__text-block {
+    position: absolute;
+    width: 100%;
+    bottom: 26px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @white;
+    padding: 15px 21px 9px 21px;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .photo-stream__likes-counter::before {
+    background-image: url("../img/like-icon-white.svg");
   }
 }
