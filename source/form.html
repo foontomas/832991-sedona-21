@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
@@ -13,11 +14,6 @@
           <img src="./img/logotype.svg" width="102" height="84" alt="логотип города Седона»">
         </a>
         <nav class="main-nav" aria-label="навигация по сайту">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--mobile">
@@ -30,6 +26,8 @@
                   фото и видео
                 </a>
               </li>
+              <li class="main-nav__item main-nav__item--logo">
+              </li>
               <li class="main-nav__item main-nav__item--mobile">
                 <a class="main-nav__link" href="#">
                   форма отзыва
@@ -41,6 +39,13 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="main-nav__toggle-bar">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
           </div>
         </nav>
       </header>
@@ -93,11 +98,19 @@
               </legend>
               <label class="form__label" for="phone-number">
                 контактный телефон*:
-                <input class="form__text-input" class=contact-info__phone type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
+                <div class="form__input-cover">
+                  <input class="form__text-input form__text-input--phone" type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
+                  <span class="form__icon">
+                  </span>
+                </div>
               </label>
               <label class="form__label" for="e-mail">
                 электронная почта*:
-                <input class="form__text-input" class=contact-info__mail type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
+                <div class="form__input-cover">
+                  <input class="form__text-input form__text-input--email" type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
+                  <span class="form__icon">
+                  </span>
+                </div>
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--impression form__fieldset--choice">
@@ -144,9 +157,14 @@
               </legend>
               <textarea class="form__textarea" aria-label="Поле для впечатлений о поездке" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги" size="250" pattern="^[А-Яа-яЁё\s]+$"></textarea>
             </fieldset>
-            <button class="form__button" type="submit">
-              отправить отзыв
-            </button>
+            <div class="form__button-bar">
+              <button class="form__button" type="submit">
+                отправить отзыв
+              </button>
+              <p class="form__p">
+                * — обязательные поля
+              </p>
+            </div>
           </form>
         </section>
       </main>
