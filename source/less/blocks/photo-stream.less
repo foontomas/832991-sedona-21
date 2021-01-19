@@ -1,10 +1,11 @@
-.photo-stream__image-container {
+/*.photo-stream__image-container {
   width: 100%;
 
   background-color: @welcome-back;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 
   &--mobile {
     height: 280px;
@@ -26,13 +27,14 @@
   &--photo-4 {
     background-image: url("../img/photo-4-mobile.jpg");
   }
-}
+  }*/
 
 .photo-stream__item {
   border-bottom: 1px solid @fieldset-border;
   padding-top: 22px;
   padding-bottom: 21px;
   margin-bottom: 11px;
+  position: relative; /*!!*/
 
   &:first-child {
     border-top: 1px solid @fieldset-border;
@@ -63,5 +65,99 @@
     background-image: url("../img/like-icon.svg");
     box-sizing: border-box;
     left: -37px;
+  }
+}
+
+.photo-stream__item--1 {
+  grid-area: highway;
+}
+
+.photo-stream__item--2 {
+  grid-area: plants;
+}
+
+.photo-stream__item--3 {
+  grid-area: northroad;
+}
+
+.photo-stream__item--4 {
+  grid-area: bridge;
+}
+
+@media (max-width: @mobile-width-only) {
+  .photo-stream {
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .photo-stream__item {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*@media (min-width: @tablet-width) {
+  /*.photo-stream__image-container--photo-1 {
+    background-image: url(../img/photo-1-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }*/
+/*}*/
+
+@media (min-width: @tablet-width) {
+  .photo-stream__list {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-areas: "highway highway" "plants northroad" "bridge none";
+    align-content: center;
+  }
+
+  .photo-stream__image {
+    height: 267px;
+  }
+
+  .photo-stream__item--1 .photo-stream__image {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-stream__text-block {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @white;
+    padding: 15px 21px 9px 21px;
+    box-sizing: border-box;
+    display: flex;
+    bottom: 0;
+  }
+
+  .photo-stream__likes-counter::before {
+    background-image: url("../img/like-icon-white.svg");
+  }
+
+  .photo-stream__list {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-template-areas: "highway highway highway" "plants northroad bridge";
+  }
+
+  .photo-stream__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    border: none;
+  }
+
+  .photo-stream__picture {
+    display: flex;
   }
 }
