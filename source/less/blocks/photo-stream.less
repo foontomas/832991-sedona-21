@@ -68,6 +68,22 @@
   }
 }
 
+.photo-stream__item--1 {
+  grid-area: highway;
+}
+
+.photo-stream__item--2 {
+grid-area: plants;
+}
+
+.photo-stream__item--3 {
+grid-area: northroad;
+}
+
+.photo-stream__item--4 {
+grid-area: bridge;
+}
+
 @media (max-width: @mobile-width-only) {
   .photo-stream {
     padding-right: 20px;
@@ -94,26 +110,19 @@
 @media (min-width: @tablet-width) {
   .photo-stream__list {
     display: grid;
-    grid-template-rows: 480px 347px 347px;
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
     justify-content: center;
-    grid-template-areas: "highway highway" "plants northroad" "bridge";
+    grid-template-areas: "highway highway" "plants northroad" "bridge none";
+    align-content: center;
   }
 
-  .photo-stream__item--1 {
-      grid-area: highway;
-    }
-
-  .photo-stream__item--2 {
-    grid-area: plants;
+  .photo-stream__image {
+    height: 267px;
   }
 
-  .photo-stream__item--3 {
-    grid-area: northroad;
-  }
-
-  .photo-stream__item--4 {
-    grid-area: bridge;
+  .photo-stream__item--1 .photo-stream__image {
+    height:400px;
   }
 }
 
@@ -131,5 +140,28 @@
 
   .photo-stream__likes-counter::before {
     background-image: url("../img/like-icon-white.svg");
+  }
+
+  .photo-stream__list {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-template-areas: "highway highway highway" "plants northroad bridge";
+  }
+
+  .photo-stream__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    border: none;
+  }
+
+  .photo-stream__text-block {
+    bottom: 0;
+  }
+
+  .photo-stream__picture {
+    display: flex;
   }
 }
