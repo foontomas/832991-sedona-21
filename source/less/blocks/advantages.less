@@ -21,13 +21,14 @@
 
 .advantages__image {
   /*width: 320px;*/
-  height: 256px;
-  background-size: auto 256px;
+  height: 260px;
+  background-size: auto 260px;
   background-position: center;
   background-repeat: no-repeat;
 
   &--image-1 {
     background-image: url("../img/feature-picture.jpg");
+    margin-bottom: 35px;
   }
 
   &--image-2 {
@@ -50,7 +51,7 @@
     padding-bottom: 35px;
 
     &--triangle {
-      padding-top: 55px;
+      padding-top: 73px;
       padding-bottom: 39px;
       background-image: url("../img/text-card-triangle.svg");
       background-repeat: no-repeat;
@@ -58,10 +59,17 @@
     }
 
     &--additional {
-      padding-top: 25px;
+      padding-top: 26px;
       padding-bottom: 24px;
     }
   }
+
+  .advantages__text-card--triangle .advantages__p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
 
   .advantages__text-card--additional {
     &:nth-child(1) {
@@ -82,6 +90,11 @@
     margin-bottom: 16px;
   }
 
+  .advantages__text-card--additional .advantages__p {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
   .advantages__br {
     display: none;
   }
@@ -91,6 +104,14 @@
     margin-bottom: 0;
   }
 
+  .advantages__number {
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+
+  .advantages__h3 {
+    margin-bottom: 11px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -99,10 +120,19 @@
     /*width: 256px;*/
     width: 33.333%;
     min-width: 256px;
+    padding-top: 40px;
     padding-right: 32px;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
+    /*padding-bottom: 40px;*/
     padding-left: 32px;
     box-sizing: border-box;
+
+    &--additional {
+      padding-top: 41px;
+      padding-right: 34px;
+      padding-bottom:63px;
+      padding-left: 33px;
+    }
   }
 
   .advantages__wrapper {
@@ -133,7 +163,9 @@
   .advantages__h3 {
     font-size: 21px;
     width: 156px;
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: auto;
   }
 
   .advantages__text-card--additional .advantages__h3 {
@@ -151,6 +183,16 @@
     /*width: 400px;*/
     width: 33.333%;
     padding-top: 47px;
+    padding-bottom: 56px;
+    padding-left: 52px;
+    padding-right: 52px;
+
+    &--additional {
+      padding-top: 42px;
+      padding-right: 43px;
+      padding-bottom:62px;
+      padding-left: 42px;
+    }
   }
 
   .advantages__wrapper {

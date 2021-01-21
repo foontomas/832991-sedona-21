@@ -4,7 +4,7 @@
   background-color: @welcome-back;
   background-image: url("../img/welcome.svg"), url("../img/intro-triangle.svg"), url("../img/background-photo.jpg");
   background-size: 282px 214px, auto, cover;
-  background-position: center 48%, 50% 100%, center 29%;
+  background-position: center 52%, 50% 100%, center 29%;
   position: relative;
   background-repeat: no-repeat, no-repeat;
 
@@ -34,8 +34,8 @@
   margin-right: auto;
 
   @media (max-width: @mobile-width-only){
-    margin-top: 33px;
-    margin-bottom: 35px;
+    margin-top: 37px;
+    margin-bottom: 11px;
     padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -44,13 +44,13 @@
 
   @media (min-width: @tablet-width) {
     max-width: 520px;
-    margin-top: 43px;
-    margin-bottom: 60px;
+    margin-top: 43.5px;
+    margin-bottom: 52.5px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-top: 48px;
-    margin-bottom: 50px;
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 41px;
   }
 }
 
@@ -63,14 +63,28 @@
 .intro__h3 {
   margin-top: 0px;
   margin-bottom: 42px;
-  @media (max-width: @mobile-width-only){
 
+  @media (max-width: @mobile-width-only){
+    margin-bottom: 28px;
   }
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
 .intro__p {
   line-height: 26px;
+
+  @media (max-width: @mobile-width-only){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
 }
