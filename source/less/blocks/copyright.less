@@ -5,11 +5,19 @@
 }
 
 .copyright__text {
-  margin-right: 8px;
+  margin-right: 13px;
   margin-bottom: 10px;
   height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 8px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.copyright__link {
+  margin-bottom: 3px;
 }
