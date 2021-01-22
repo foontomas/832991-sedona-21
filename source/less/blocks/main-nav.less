@@ -11,6 +11,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     min-width: 153px;
+    width: 20%;
     box-shadow: none;
   }
 }
@@ -194,6 +195,27 @@
   .main-nav__item--form {
     padding-left: 5px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item:nth-child(1),
+  .main-nav__item:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  .main-nav__item:nth-child(1) .main-nav__link {
+    margin-left: 20px;
+  }
+
+  .main-nav__item:nth-child(4),
+  .main-nav__item:nth-child(5) {
+    justify-content: flex-start;
+  }
+}
+
+.main-nav__list {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 /*.main-nav__list--mobile {
