@@ -90,9 +90,14 @@
               </p>
             </div>
             <div class="advantages__image advantages__image--image-1">
-              <p class="visually-hidden">
+              <!--<p class="visually-hidden">
                 город Седона
-              </p>
+              </p>-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="город Седона" height="100%">
+              </picture>
             </div>
             <!--<img class="advantages__image" src="./img/feature-picture.jpg" alt="город Седона" width="800" height="256">-->
           </div>
@@ -142,9 +147,14 @@
               </p>
             </div>
             <div class="advantages__image advantages__image--image-2">
-              <p class="visually-hidden">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="город Седона" height="100%">
+              </picture>
+              <!--<p class="visually-hidden">
                 город Седона
-              </p>
+              </p>-->
             </div>
             <!--<img class="advantages__image image-2" src="./img/red-rocks.jpg" alt="город Седона" width="800" height="256">-->
           </div>
@@ -160,7 +170,7 @@
                 все интересные места находятся очень близко
               </p>
             </li>
-            <li class="advantages__text-card advantages__text-card--additional advantages__text-card--4">
+            <li class="advantages__text-card advantages__text-card--additional">
               <h3 class="advantages__h3">
                 красивая дорога
               </h3>
@@ -234,6 +244,8 @@
           </a>
         </div>
       </footer>
+      <script src="js/navigation-menu.js">
+      </script>
     </div>
   </body>
 </html>

@@ -115,6 +115,7 @@
   right: 19px;*/
   bottom: 18px;
   right: 20px;
+  display: block;
   width: 23px;
   height: 22px;
   background-color: @white;
@@ -141,7 +142,7 @@
 /*открытое меню*/
 .main-nav--opened .main-nav__toggle {
   position: absolute;
-  top: 16px;
+  top: -205px;
   right: 19px;
   z-index: 2;
   display: block;
@@ -176,8 +177,12 @@
   }
 }
 
-.main-nav--opened .main-nav__item {
+.main-nav--opened .main-nav__item:not(.main-nav__item--logo) {
   display: block;
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
 }
 
 .main-nav__toggle-bar {
@@ -232,3 +237,15 @@
   line-height: 40px;
   color: @white;
 }*/
+
+@media (min-width: @tablet-width) {
+  .main-nav--closed .main-nav__item {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--closed .main-nav__item {
+    display: flex;
+  }
+}
