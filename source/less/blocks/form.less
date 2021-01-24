@@ -27,7 +27,8 @@
 
 .form__fieldset--introdution {
   padding-bottom: 20px;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
+  padding-right: 19px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -39,12 +40,15 @@
 }
 
 .form__fieldset--introdution .form__legend {
-  margin-bottom: 19px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-left: 11px;
 }
 
 .form__fieldset--contact-info {
   padding-top: 0;
-  padding-bottom: 10px;
+  padding-right: 18px;
+  padding-bottom: 15px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -55,12 +59,13 @@
 
 .form__fieldset--contact-info .form__legend {
   margin-bottom: 17px;
+  padding-left: 9px;;
 }
 
 .form__fieldset--impression {
   padding-top: 0;
-  padding-bottom: 31px;
-  margin-bottom: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     order: 1;
@@ -71,8 +76,13 @@
   }
 }
 
-.form__fieldset--choice .form__legend {
-  margin-bottom: 25px;
+.form__fieldset--sights .form__legend {
+  padding-right: 5px;
+  margin-bottom: 21px;
+}
+
+.form__fieldset--impression .form__legend {
+  margin-bottom: 20px;
 }
 
 .form__fieldset--contact-info .form__label,
@@ -86,10 +96,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  margin-left: 7px;
+
+  &:nth-child(3) {
+    margin-bottom: 20px;
+  }
 
   &:nth-child(4) {
-    margin-bottom: 0;
+    margin-bottom: 3px;
   }
 }
 
@@ -114,14 +129,24 @@
   text-transform: none;
   font-family: "PT Sans", "Arial", sans-serif;
   width: 100%;
-  padding-left: 18px;
-  margin-left: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 21px;
+  margin-left: 14px;
+}
+
+.form__fieldset--introdution .form__text-input--intro3 {
+  margin-left: 15px;
+  padding-left: 23px;
 }
 
 .form__fieldset--contact-info .form__text-input {
   box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 14px;
+  padding-left: 22px;
+  margin-left: 7px;
+  padding-top: 4px;
 }
 
 .form__input-cover {
@@ -133,6 +158,18 @@
 
 .data-input {
   height: 38px;
+}
+
+.form__fieldset--contact-info .form__label {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-bottom: 4px;
+
+  &--email {
+    margin-bottom: -1px;
+    padding-left: 28px;
+  }
 }
 
 /*.form__text-input--phone::after {
@@ -153,6 +190,7 @@
   background-position: center;
   margin-top: 5px;
   margin-bottom: 14px;
+  flex: none;
 }
 
 .form__text-input--phone ~ .form__icon {
@@ -165,7 +203,7 @@
 
 .form__fieldset--sights {
   padding-top: 0;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   margin-bottom: 20px;
 }
 
@@ -183,7 +221,9 @@
 }
 
 .form__fieldset--impression .form__label {
-  margin-bottom: 21px;
+  margin-bottom: 11px;
+  padding-left: 6px;
+
 
   &:nth-child(4) {
     margin-bottom: 0;
@@ -191,7 +231,8 @@
 }
 
 .form__fieldset--sights .form__label {
-  margin-bottom: 34px;
+  margin-bottom: 24px;
+  padding-left: 7px;
 
   &:nth-child(5) {
     margin-bottom: 0;
@@ -201,7 +242,9 @@
 .form__fieldset--emotions {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 51px;
+  margin-bottom: 45px;
+  padding-left: 17px;
+  padding-right: 19px;
 
   @media (min-width: @tablet-width) {
     order: 5;
@@ -239,6 +282,8 @@
   color: @white;
   width: 280px;
   height: 58px;
+  padding-top: 7px;
+  margin-right: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
   border: none;
 }
@@ -284,7 +329,8 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  margin-right: 26px;
+  margin-right: 20px;
+  border: 5px solid @form-input-back;
 }
 
 .form__fieldset--impression input[type="radio"]:checked ~ .form__span {
@@ -299,7 +345,9 @@
   background-color: @form-input-back;
   width: 46px;
   height: 46px;
-  margin-right: 29px;
+  margin-right: 23px;
+  border: 5px solid @form-input-back;
+  border-radius: 10%;
 }
 
 .form__fieldset--sights input[type="checkbox"]:checked ~ .form__span {
