@@ -377,7 +377,31 @@
     margin: 0 auto;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
+    position: relative;
+    border-bottom: none;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: -94px;
+      top: 30px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      left: -94px;
+      top: 30px;
+      z-index: 5;
+    }
   }
 
   .form__fieldset--sights .form__legend {
@@ -457,12 +481,38 @@
   .form__fieldset--contact-info {
     padding-left: 51px;
     padding-right: 57px;
+    position: relative;
+    border-bottom: none;
+    margin-bottom: 21px;
   }
 
   .form__fieldset--contact-info .form__legend {
     padding-top: 29px;
     margin-bottom: 19px;
     padding-left: 7px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: 60px;
+      top: 40px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      left: 60px;
+      top: 40px;
+      z-index: 5;
+    }
+
   }
 
   /*.form__fieldset--contact-info .form__text-input--phone {
@@ -487,7 +537,7 @@
   .form__fieldset--emotions {
     padding-left: 58px;
     padding-right: 59px;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 
   .form__fieldset--emotions .form__textarea {
@@ -507,6 +557,10 @@
 
   .form__button-bar {
     margin-bottom: 15px;
+  }
+
+  .form {
+    border-top: none;
   }
 }
 
