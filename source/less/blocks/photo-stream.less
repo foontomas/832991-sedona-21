@@ -128,9 +128,14 @@
   .photo-stream__item {
     border: none;
     padding: 0;
+    background-color: @form-input-back;
 
     &:first-child {
       border: none;
+    }
+
+    &:nth-child(3) {
+      background-color: @catalog-add-back;
     }
   }
 
@@ -140,6 +145,40 @@
 
   .photo-stream__item--1 .photo-stream__image {
     height: 400px;
+  }
+
+  .photo-stream__text-block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 29px;
+    padding-bottom: 2px;
+  }
+
+  .photo-stream__item--1 .photo-stream__text-block {
+    padding-left: 20px;
+    padding-right: 21px;
+    padding-top: 10px;
+    /*margin-bottom: 2px;*/
+
+    /*background-color: @form-input-back;*/
+  }
+
+  .photo-stream__item--3 .photo-stream__text-block {
+    padding-right: 36px;
+  }
+
+  .photo-stream__item--text-container,
+  .photo-stream__likes-counter {
+    display: inline-block;
+  }
+
+  .photo-stream__likes-counter::before {
+    left: -32px;
   }
 }
 
