@@ -25,6 +25,10 @@
   font-size: 18px;
 }
 
+.form__legend {
+  color: @simple-black;
+}
+
 .form__fieldset--introdution {
   padding-bottom: 20px;
   margin-bottom: 19px;
@@ -152,6 +156,26 @@
   padding-top: 4px;
 }
 
+.form__textarea::placeholder,
+.form__text-input::placeholder {
+  color: @simple-black;
+}
+
+.form__textarea:hover,
+.form__text-input:hover {
+  background-color: @fieldset-border;
+}
+
+.form__textarea:focus,
+.form__textarea:active,
+.form__text-input:focus,
+.form__text-input:active {
+  background-color: @white;
+  outline: 4px solid @fieldset-border;
+  outline-offset: -4px;
+  border: none;
+}
+
 .form__input-cover {
   display: flex;
   flex-flow: row;
@@ -226,6 +250,7 @@
 .form__fieldset--impression .form__label {
   margin-bottom: 11px;
   padding-left: 6px;
+  color: @simple-black;
 
 
   &:nth-child(4) {
@@ -236,6 +261,7 @@
 .form__fieldset--sights .form__label {
   margin-bottom: 24px;
   padding-left: 7px;
+  color: @simple-black;
 
   &:nth-child(5) {
     margin-bottom: 0;
@@ -291,6 +317,24 @@
   border: none;
 }
 
+.form__button:hover,
+.form__button:focus {
+  background-color: @mobile-nav-hover;
+  outline :none;
+  border: none;
+}
+
+.form__button:active {
+  background-color: @mobile-nav-active;
+  color: rgba(255, 255, 255, 0.3);
+  outline :none;
+  border: none;
+}
+
+.form__button:disabled {
+  background-color: @fieldset-border;
+}
+
 .form__button-bar {
   @media (min-width: @tablet-width) {
     order: 6;
@@ -335,12 +379,42 @@
   border-radius: 50%;
   margin-right: 20px;
   border: 5px solid @form-input-back;
+
+  /*&:active {
+    background-color: @checkbox-active;
+    border: 5px solid @checkbox-active;
+  }
+
+  &:hover {
+    background-color: @fieldset-border;
+    border: 5px solid @fieldset-border;
+  }*/
 }
 
 .form__fieldset--impression input[type="radio"]:checked ~ .form__span {
   background-image: url("../img/dot.svg");
   background-position: center;
 }
+
+.form__fieldset--impression input[type="radio"]:checked:active ~ .form__span {
+  background-image: url("../img/dot-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid @checkbox-active;
+}
+
+.form__fieldset--impression input[type="radio"]:hover ~ .form__span {
+  background-color: @fieldset-border;
+  border: 5px solid @fieldset-border;
+}
+
+.form__fieldset--impression input[type="radio"]:active ~ .form__span {
+  background-image: url("../img/dot-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid  @checkbox-active;
+}
+
 
 .form__fieldset--sights input[type="checkbox"] ~ .form__span {
   display: inline-block;
@@ -357,6 +431,25 @@
 .form__fieldset--sights input[type="checkbox"]:checked ~ .form__span {
   background-image: url("../img/tick.svg");
   background-position: center;
+}
+
+.form__fieldset--sights input[type="checkbox"]:checked:active ~ .form__span {
+  background-image: url("../img/tick-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid @checkbox-active;
+}
+
+.form__fieldset--sights input[type="checkbox"]:hover ~ .form__span {
+  background-color: @fieldset-border;
+  border: 5px solid @fieldset-border;
+}
+
+.form__fieldset--sights input[type="checkbox"]:active ~ .form__span {
+  background-image: url("../img/tick-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid  @checkbox-active;
 }
 
 @media (max-width: @mobile-width-only) {
